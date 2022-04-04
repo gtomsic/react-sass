@@ -1,0 +1,184 @@
+@media only screen and (max-width: $tablet) {
+  h1 {
+    font-size: 4rem;
+  }
+  .header {
+    &-menu {
+      font-size: 2.4rem;
+      display: block;
+      cursor: pointer;
+    }
+    &-page {
+      display: block;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      i {
+        flex: 1;
+        padding: 0.3rem 0.5rem;
+        border: 0.1rem solid lighten($primary, 20%);
+        border-radius: 0.5rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    }
+    &-mobile__nav-active {
+      display: flex;
+    }
+    &-banner {
+      height: 40vh;
+    }
+    &-nav {
+      background-color: rgba($primary, 0.9);
+      font-size: 1.6rem;
+      color: $light;
+      &__container {
+        display: flex;
+        align-items: center;
+        height: 7rem;
+      }
+      &__logo {
+        font-size: 2rem;
+        flex: 1;
+        text-align: center;
+        letter-spacing: 0.1rem;
+      }
+      &__items {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+    min-height: 80vh;
+  }
+
+  .two-col {
+    flex-direction: column;
+    padding: 0;
+    &__reverse {
+      flex-direction: column-reverse;
+      margin-bottom: 8rem;
+    }
+    & > * {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      color: $secondary;
+      text-shadow: $text-shadow;
+      font-size: 2rem;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .three-col {
+    margin: 5rem 3rem;
+    flex-direction: column;
+    min-height: 5rem;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        padding: 2rem 4rem;
+        font-size: 3rem;
+        text-align: center;
+        color: $secondary;
+      }
+    }
+  }
+
+  .footer {
+    min-height: 10rem;
+    background-color: $primary;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    .two-col {
+      padding: 0;
+      & > * {
+        color: $light;
+        font-size: 1.6rem;
+        flex: 1;
+        flex-direction: column;
+        h3 {
+          margin-bottom: 2rem;
+        }
+        p {
+          &:not(:last-child) {
+            margin-bottom: 0.8rem;
+          }
+          i {
+            margin-right: 1rem;
+          }
+        }
+      }
+      &__one {
+        align-items: center;
+      }
+      &__two {
+        align-items: center;
+      }
+    }
+  }
+
+  ////////////////////////////////////////////////////
+  ///////////// About Page //////////////////////////
+  ////////////////////////////////////////////////////
+  .about {
+    padding: 5rem 2rem;
+    h4 {
+      color: $secondary;
+    }
+    section {
+      margin: 3rem 0;
+    }
+    &-two__side {
+      display: flex;
+      flex-direction: column;
+      &-left {
+        margin-right: 0;
+        img {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
+      &-right {
+        padding-top: 5rem;
+      }
+    }
+  }
+  ////////////////////////////////////////////////////
+  ///////////// Contacts Page //////////////////////////
+  ////////////////////////////////////////////////////
+  .contacts {
+    &-twoside {
+      margin: 10rem 0;
+      flex-direction: column-reverse;
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        .form {
+          border-radius: 0;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+  ////////////////////////////////////////////////////
+  ///////////// About Page //////////////////////////
+  ////////////////////////////////////////////////////
+  .projects {
+    &-item {
+      max-width: 49%;
+    }
+  }
+}

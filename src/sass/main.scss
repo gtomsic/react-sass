@@ -1,0 +1,40 @@
+@import 'variables';
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  color: $dark;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+@import 'colors';
+@import 'layout';
+@import 'about';
+@import 'contacts';
+@import 'projects';
+@import 'tablet';
+@import 'mobile';

@@ -1,0 +1,49 @@
+@media only screen and (max-width: $mobile) {
+  h1 {
+    font-size: 3rem;
+  }
+  .about {
+    h3 {
+      text-align: center;
+    }
+    &-2-col {
+      flex-direction: column;
+      h3 {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      & > * {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        img {
+          width: 100%;
+        }
+        h3 {
+          color: $primary;
+        }
+      }
+      &-reverse {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  ////////////////////////////////////////////////////
+  ///////////// Projects Page //////////////////////////
+  ////////////////////////////////////////////////////
+  .projects {
+    padding: 3rem 0;
+    &-item {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      &:not(:last-child) {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid gainsboro;
+      }
+    }
+  }
+}
